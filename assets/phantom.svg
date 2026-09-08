@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360">
+<rect width="1000" height="360" rx="18" fill="#050505"/>
+<g stroke="#666" fill="none" stroke-width="1">
+<rect x="45" y="75" width="200" height="80" rx="10"/><rect x="400" y="75" width="200" height="80" rx="10"/>
+<rect x="755" y="75" width="200" height="80" rx="10"/>
+<rect x="400" y="220" width="200" height="80" rx="10"/>
+<path d="M245 115H400M600 115H755M500 155V220"/>
+</g>
+<g fill="#eee" font-family="monospace">
+<text x="45" y="45" font-size="18">PHANTOM AI // CLIENT → FUNCTION → MODEL</text>
+<text x="75" y="108" font-size="15">REACT CLIENT</text><text x="75" y="133" font-size="11" fill="#999">chat / state / audio</text>
+<text x="430" y="108" font-size="15">NETLIFY FUNCTION</text><text x="430" y="133" font-size="11" fill="#999">server-side secret</text>
+<text x="785" y="108" font-size="15">GEMINI</text><text x="785" y="133" font-size="11" fill="#999">streaming inference</text>
+<text x="445" y="252" font-size="15">LOCAL PERSISTENCE</text><text x="445" y="277" font-size="11" fill="#999">conversations / preferences</text>
+</g></svg>
