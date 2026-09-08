@@ -1,83 +1,48 @@
-# Profile v3 setup
+# Profile maintenance
 
-This package is designed for the public repository:
+The profile is ready locally on `design/ascii-signal`. Git authentication was unavailable; nothing was pushed.
 
-`leemaxyum/leemaxyum`
+## Publish
 
-The visual direction is intentionally broader than a degree/discipline label:
-**building in public, systems, interfaces, experiments, open source.**
+Run these commands in PowerShell after signing in through your usual GitHub tooling. No credential belongs in a command or file:
 
-## 1. Replace the profile repository
+```powershell
+Set-Location 'C:\Users\lenovo\Documents\Codex\2026-09-09\leemaxyum-profile-redesign\outputs\profile'
+git -c http.sslBackend=openssl push -u origin design/ascii-signal
+```
 
-Copy the contents of this package into your existing `leemaxyum/leemaxyum` repository.
+Then open [the comparison](https://github.com/leemaxyum/leemaxyum/compare/main...design/ascii-signal?expand=1) and create a pull request, or, if GitHub CLI is installed and authenticated:
 
-Keep:
-- `README.md`
-- `assets/`
-- `.github/workflows/`
-- `output/`
+```powershell
+gh pr create --repo leemaxyum/leemaxyum --base main --head design/ascii-signal --title "Redesign profile as a monochrome ASCII engineering interface" --body-file PR_BODY.md
+```
 
-## 2. Contribution matrix
+After merging, inspect the profile and run **Contribution signal** and **GitHub telemetry** in Actions once. Scheduled workflows run from the default branch. Normal pushes are used; branch protection may require a maintainer-approved alternative for generated assets.
 
-The first version of `output/github-snake-dark.svg` is a placeholder so the README has no broken image.
+## Integrations
 
-Push the workflow. GitHub Actions will replace it with your real contribution matrix.
+| Integration | Decision / behavior |
+| --- | --- |
+| GitHub stats | Local timestamped SVG from the public REST API; weekly refresh uses automatic GITHUB_TOKEN. Counts public repositories, stars on owned non-forks, and followers. |
+| Contribution snake | Initial SVG uses actual public calendar intensity; daily Platane/snk workflow replaces it with a freshly solved snake. |
+| Activity graph | Local twelve-week graph from the public contribution calendar, refreshed weekly. The external widget returned an HTTP error during validation and was replaced. |
+| WakaTime | Optional WAKATIME_API_KEY repository secret; skips cleanly when absent. Updates only the waka markers. |
+| GitHub Metrics | Optional METRICS_TOKEN repository secret for public account queries. Automatic GITHUB_TOKEN commits the result. Generated assets/github-metrics.svg is intentionally not embedded before it exists. See upstream permissions guidance. |
+| Repo cards | Replaced with readable project summaries and links to avoid duplicate widgets. |
+| Streak / trophies / profile views | Omitted: additional counters do not explain the work. |
+| Skill Icons | Omitted: project implementations already establish the tools. |
+| Typing animation | The local GIF handles the identity reveal, removing a redundant external dependency. |
 
-You can also run:
-GitHub → Actions → Contribution Matrix → Run workflow
+All write workflows share concurrency, scope writes to their intended files, and have timeouts. Optional secrets are never printed. External actions are pinned to verified commit SHAs. Review upstream changes before updating these pins.
 
-## 3. WakaTime
+Upstream configuration: [snake](https://github.com/Platane/snk), [WakaTime](https://github.com/athul/waka-readme), [Metrics](https://github.com/lowlighter/metrics).
 
-Create a WakaTime account and install the WakaTime editor extension.
+## Rebuild and maintain
 
-Then add this repository secret:
+`python scripts/build_hero.py` requires Pillow and Consolas on Windows or DejaVu Sans Mono on Linux. It writes the GIF and static SVG from authored glyphs.
 
-`WAKATIME_API_KEY`
+`python scripts/update_stats.py` uses only Python's standard library; it preserves the last good snapshot if the API fails before generation.
 
-GitHub:
-Settings → Secrets and variables → Actions → New repository secret
+The hero has eight frames and a nine-second loop. Its final frame is composed and held for almost six seconds. An explicit static link supports readers whose renderer does not honor the reduced-motion picture source. Some GIF clients freeze the initial black frame; a GIF cannot control that behavior.
 
-The workflow will update your coding telemetry.
-
-## 4. GitHub Metrics
-
-`metrics.yml` is included as an optional extra telemetry layer.
-
-If you want the profile cleaner, remove that workflow and the README does not depend on it.
-
-## 5. External widgets
-
-The README uses:
-- readme-typing-svg
-- GitHub Readme Stats
-- GitHub Streak Stats
-- GitHub Profile Trophy
-- GitHub Activity Graph
-- Skill Icons
-- profile views
-- Capsule Render
-
-These are intentionally limited to visual/telemetry components that support the profile instead of turning it into a widget wall.
-
-## 6. Personalize the build log
-
-Edit only the `~/build-log` section as your projects evolve.
-
-Do not rewrite the whole profile every time you learn a new library.
-
-## 7. Add projects
-
-When a project becomes genuinely interesting, give it:
-- one sentence describing what it is
-- architecture/problem bullets
-- repository link
-- optionally one custom diagram in `assets/`
-
-That keeps the profile evergreen.
-
-## Design rule
-
-The profile should become **more interesting as the GitHub account becomes more interesting**.
-
-Do not add labels just because they sound impressive.
-Let repositories, architecture diagrams, commits, contributions, and experiments advertise the skill.
+Reference provenance is under `assets/hero/reference assets/`. Original assets are retained. No other repositories were modified.

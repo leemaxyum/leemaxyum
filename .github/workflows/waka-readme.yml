@@ -1,17 +1,31 @@
-name: Coding Telemetry
-
+name: Coding telemetry
 on:
   schedule:
-    - cron: "37 18 * * *"
+    - cron: '37 18 * * *'
   workflow_dispatch:
-
 permissions:
   contents: write
-
+concurrency:
+  group: profile-generated-assets
+  cancel-in-progress: false
 jobs:
-  waka-readme:
+  waka:
+    if: github.repository == 'leemaxyum/leemaxyum'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      WAKA_KEY: ${{ secrets.WAKATIME_API_KEY }}
     steps:
-      - uses: athul/waka-readme@master
-        env:
+      - name: Optional integration status
+        if: env.WAKA_KEY == ''
+        run: echo 'WakaTime is not configured; README stays unchanged.'
+      - uses: athul/waka-readme@370590ad8da8f54282ed92aa42b7c25ecbd5a9a6 # master
+        if: env.WAKA_KEY != ''
+        with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+          TARGET_PATH: README.md
+          SECTION_NAME: waka
+          SHOW_TITLE: 'true'
+          LANG_COUNT: '4'

@@ -1,23 +1,59 @@
-name: GitHub Metrics
-
+name: GitHub telemetry
 on:
   schedule:
-    - cron: "47 18 * * 1"
+    - cron: '47 18 * * 1'
   workflow_dispatch:
-
 permissions:
   contents: write
-
+concurrency:
+  group: profile-generated-assets
+  cancel-in-progress: false
 jobs:
-  metrics:
+  snapshot:
+    if: github.repository == 'leemaxyum/leemaxyum'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Generate metrics
-        uses: lowlighter/metrics@latest
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          filename: assets/github-metrics.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Refresh public statistics
+        run: |
+          python scripts/update_stats.py
+          python scripts/update_activity.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit statistics
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/github-stats.svg assets/activity-graph.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'chore: refresh public statistics'
+          git pull --rebase
+          git push
+  metrics:
+    needs: snapshot
+    if: github.repository == 'leemaxyum/leemaxyum'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      METRICS_KEY: ${{ secrets.METRICS_TOKEN }}
+    steps:
+      - name: Optional integration status
+        if: env.METRICS_KEY == ''
+        run: echo 'Extended Metrics is not configured; public statistics remain available.'
+      - uses: lowlighter/metrics@65836723097537a54cd8eb90f61839426b4266b6 # latest
+        if: env.METRICS_KEY != ''
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: ${{ github.event.repository.default_branch }}
           user: leemaxyum
-          template: classic
-          base: header, activity, community, repositories, metadata
+          filename: assets/github-metrics.svg
+          base: header, activity, community, repositories
           config_timezone: Asia/Kolkata
+          config_animations: 'no'

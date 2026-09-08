@@ -1,245 +1,99 @@
 <div align="center">
 
-<img src="./assets/hero.png" alt="Pradhnesh — building in public" width="100%">
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/ascii-signal.svg">
+  <img src="./assets/ascii-signal.gif" width="1200" alt="PRADHNESH // BUILDING IN PUBLIC — two ASCII figures reaching across a star field">
+</picture>
 
-<br>
+**BUILD → BREAK → UNDERSTAND → SHIP**
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=build+%E2%86%92+break+%E2%86%92+understand+%E2%86%92+ship;systems+over+labels;curiosity+is+the+roadmap;the+profile+is+part+of+the+project" alt="Typing animation">
+Systems / interfaces / experiments / open source.
 
-<br>
-
-<a href="https://github.com/leemaxyum?tab=repositories"><img src="https://img.shields.io/badge/REPOSITORIES-000?style=for-the-badge&logo=github&logoColor=white" alt="repositories"></a>
-<a href="https://github.com/leemaxyum"><img src="https://komarev.com/ghpvc/?username=leemaxyum&style=for-the-badge&color=000000&label=PROFILE+SIGNALS" alt="profile views"></a>
-<a href="https://github.com/leemaxyum?tab=stars"><img src="https://img.shields.io/github/stars/leemaxyum?style=for-the-badge&label=STARS&color=000" alt="stars"></a>
-
-</div>
-
----
-
-## `~/about`
-
-I build things, then keep pulling on the thread until I understand **why they work**.
-
-No permanent niche. No stack loyalty. No pretending the roadmap is finished.
-
-The common thread is simple:
-
-> **make something real → learn what breaks → rebuild it better → ship the next version**
-
-This profile is intentionally designed to grow with that process.
-
----
-
-## `~/now`
-
-```text
-┌─ SIGNAL ───────────────────────────────────────────────────────────────┐
-│                                                                       │
-│  MODE        BUILD                                                   │
-│  STATUS      ACTIVE                                                   │
-│  FOCUS       software / systems / experiments                        │
-│  OPEN SOURCE moving from user → contributor → maintainer              │
-│  CURRENT     TPLAYTV · Phantom AI · Forest Quest                      │
-│                                                                       │
-└───────────────────────────────────────────────────────────────────────┘
-```
-
----
-
-## `~/featured`
-
-### TPLAYTV — local multiplayer, TV-first
-
-A PC/TV host turns phones into controllers over LAN. The project is evolving toward a reusable real-time multiplayer platform rather than a single game.
-
-<img src="./assets/tplaytv.svg" width="100%" alt="TPLAYTV architecture">
-
-**Stack:** Node.js · Express · Socket.IO · Vite · TypeScript  
-**Interesting problems:** room lifecycle · state synchronization · client isolation · latency · game protocol · reconnects
-
-[Repository →](https://github.com/leemaxyum/TPLAYTV)
-
----
-
-### Phantom AI — AI application engineering
-
-A full chatbot application with streaming model responses, conversation state, Markdown/code rendering, browser speech, audio, and server-side API-key handling.
-
-<img src="./assets/phantom.svg" width="100%" alt="Phantom AI architecture">
-
-**Stack:** React · TypeScript · Vite · Gemini · Netlify Functions · Framer Motion  
-**Interesting problems:** streaming UX · server boundaries · persistence · async state · product polish
-
-[Repository →](https://github.com/leemaxyum/phantom-ai)
-
----
-
-### Forest Quest — game systems
-
-A browser action-platformer built without a game engine, using Canvas and JavaScript.
-
-`explore → fight → upgrade → boss → repeat`
-
-**Stack:** JavaScript · HTML5 Canvas · CSS  
-[Repository →](https://github.com/leemaxyum/Forest-Quest)
-
----
-
-## `~/toolbox`
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=cpp,python,js,ts,react,nodejs,express,html,css,git,github,linux,vscode,postgres,mongodb,docker&perline=8" alt="technology icons">
+[Projects](https://github.com/leemaxyum?tab=repositories) · [Build log](#build-log) · [Static hero](./assets/ascii-signal.svg)
 
 </div>
 
-The list is deliberately a **toolbox**, not a résumé.  
-Tools get added when a project gives me a reason to learn them.
+I build things, pull them apart, and follow the questions they leave behind.
+The work is the introduction. The archive stays open.
 
----
-
-## `~/engineering`
+### `01 / system status`
 
 ```text
-REAL-TIME                 APPLICATIONS              SYSTEMS
-──────────                ────────────              ───────
-Socket.IO                 React                     networking
-state synchronization     APIs                       architecture
-rooms / sessions          async flows                persistence
-latency                   UX                         deployment
-
-COMPUTATION               OPEN SOURCE               BUILDING
-───────────               ───────────                ────────
-C++                       Git / GitHub                prototypes
-Python                    issues / PRs                experiments
-DSA                       documentation               games
-math                      maintainership              weird ideas
+MODE      building in public
+SIGNAL    systems + interfaces
+METHOD    experiment / inspect / iterate
+SOURCE    open
 ```
 
----
+### `02 / selected transmissions`
 
-## `~/open-source`
+**[TPLAYTV ↗](https://github.com/leemaxyum/TPLAYTV)**<br>
+TV-first LAN multiplayer: phones join rooms as controllers; a shared display hosts the game. Express, Socket.IO, and typed game/controller contracts connect the pieces.
 
-```text
-LEVEL 01   learn the ecosystem
-LEVEL 02   read real code
-LEVEL 03   fix small things
-LEVEL 04   submit useful PRs
-LEVEL 05   own a subsystem
-LEVEL 06   maintain something people depend on
-```
+`phone input → room server → shared screen`
 
-The objective is not to collect contribution squares.
+**[Phantom AI ↗](https://github.com/leemaxyum/phantom-ai)**<br>
+A React chat interface with conversation persistence, Markdown/code rendering, and browser speech. Its shared server handler connects to Groq through an OpenAI-compatible API.
 
-**The objective is to become useful to unfamiliar codebases.**
+`conversation → server handler → model → response`
 
----
+**[Forest Quest ↗](https://github.com/leemaxyum/Forest-Quest)**<br>
+A Phaser browser platformer with enemy combat, fireballs, bosses, and character upgrades. A place to experiment with movement, collisions, and game state.
 
-## `~/telemetry`
+**[Portfolio ↗](https://github.com/leemaxyum/portfolio)**<br>
+A Persona-inspired menu interface in HTML, CSS, and JavaScript. Separate model, view, and controller modules handle data, rendering, and navigation.
 
-### GitHub
+### `03 / engineering interests`
 
-<div align="center">
+Real-time state · interface behavior · server boundaries · game systems · readable architecture.
 
-<img src="https://github-readme-stats.vercel.app/api?username=leemaxyum&show_icons=true&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=AAAAAA&icon_color=FFFFFF&rank_icon=github" width="49%" alt="GitHub stats">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=leemaxyum&hide_border=true&background=00000000&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF&sideLabels=AAAAAA&dates=777777" width="49%" alt="GitHub streak">
+**Open-source direction**<br>
+Read the source → reproduce a problem → make a useful fix → explain the change → maintain it.
 
-</div>
+### `04 / telemetry`
 
-### Repository signal
+<img src="./assets/github-stats.svg" width="495" alt="GitHub public statistics snapshot; see the timestamp inside the card">
 
-<div align="center">
+<details>
+<summary>Contribution signal / activity / optional coding time</summary>
 
-<a href="https://github.com/leemaxyum/TPLAYTV">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leemaxyum&repo=TPLAYTV&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=AAAAAA" width="49%" alt="TPLAYTV repository card">
-</a>
-<a href="https://github.com/leemaxyum/phantom-ai">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leemaxyum&repo=phantom-ai&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=AAAAAA" width="49%" alt="Phantom AI repository card">
-</a>
+#### Contribution snake
 
-</div>
+<img src="./output/github-snake-dark.svg" width="900" alt="Contribution snake; the asset states whether live data has been generated">
 
-### Contribution matrix
+#### Activity graph
 
-<img src="./output/github-snake-dark.svg" width="100%" alt="Contribution matrix">
+<img src="./assets/activity-graph.svg" width="900" alt="Recent public GitHub contribution activity">
 
-### Trophy wall
+#### Coding time
 
-<img src="https://github-profile-trophy.vercel.app/?username=leemaxyum&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%" alt="GitHub trophies">
+<!--START_SECTION:waka-->
+Coding-time telemetry is not connected.
+<!--END_SECTION:waka-->
 
----
+[GitHub activity](https://github.com/leemaxyum?tab=overview) · [Integration notes](./SETUP.md)
 
-## `~/activity`
+</details>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=leemaxyum&bg_color=00000000&color=AAAAAA&line=FFFFFF&point=FFFFFF&area=true&hide_border=true" width="100%" alt="GitHub activity graph">
+<a id="build-log"></a>
 
----
+### `05 / build log`
 
-## `~/time`
+**2026-09 · Profile signal** — hand-composed ASCII hero, source-checked project notes, and quieter telemetry.<br>
+Follow the current work: [TPLAYTV commits](https://github.com/leemaxyum/TPLAYTV/commits) · [Phantom AI commits](https://github.com/leemaxyum/phantom-ai/commits) · [Forest Quest commits](https://github.com/leemaxyum/Forest-Quest/commits).
 
-WakaTime can turn this section into actual build telemetry once the workflow is enabled.
+### `06 / principles`
 
-```text
-language distribution
-editor / OS usage
-daily coding time
-weekly coding streak
-```
-
-See `SETUP.md` for the one-time secret setup.
-
----
-
-## `~/build-log`
-
-**2026**
-
-```text
-08  ── TPLAYTV        real-time multiplayer foundation
-08  ── Phantom AI     AI application + server boundary
-08  ── Forest Quest   Canvas game systems
-08  ── Portfolio      architecture-first personal site
-09  ── profile        turning the profile into an evolving interface
-```
-
-This log is intentionally short.
-
-Projects should tell the story better than a list of adjectives.
-
----
-
-## `~/principles`
-
-- **Build before branding.**
-- **Understand the abstraction before hiding behind it.**
-- **Prefer working systems over impressive descriptions.**
-- **Read source code.**
-- **Ship small, then deepen the architecture.**
-- **Keep the profile honest enough that the work can defend it.**
-
----
-
-## `~/connect`
-
-<div align="center">
-
-<a href="https://github.com/leemaxyum">
-<img src="https://img.shields.io/badge/GITHUB-000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>
-<a href="https://github.com/leemaxyum?tab=repositories">
-<img src="https://img.shields.io/badge/PROJECTS-000?style=for-the-badge&logo=github&logoColor=white" alt="Projects">
-</a>
-
-<br><br>
-
-`leemaxyum` · building in public · archive open
-
-</div>
+- Build something real. Inspect what breaks.
+- Read the source. Make the boundaries clear.
+- Ship small. Leave the next person a useful trail.
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=90&color=000000&section=footer" width="100%" alt="footer">
+`leemaxyum // archive open`
+
+[GitHub](https://github.com/leemaxyum) · [Repositories](https://github.com/leemaxyum?tab=repositories) · [Portfolio source](https://github.com/leemaxyum/portfolio)
 
 </div>

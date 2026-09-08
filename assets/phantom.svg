@@ -7,9 +7,9 @@
 <path d="M245 115H400M600 115H755M500 155V220"/>
 </g>
 <g fill="#eee" font-family="monospace">
-<text x="45" y="45" font-size="18">PHANTOM AI // CLIENT → FUNCTION → MODEL</text>
+<text x="45" y="45" font-size="18">PHANTOM AI // CLIENT â†’ FUNCTION â†’ MODEL</text>
 <text x="75" y="108" font-size="15">REACT CLIENT</text><text x="75" y="133" font-size="11" fill="#999">chat / state / audio</text>
-<text x="430" y="108" font-size="15">NETLIFY FUNCTION</text><text x="430" y="133" font-size="11" fill="#999">server-side secret</text>
-<text x="785" y="108" font-size="15">GEMINI</text><text x="785" y="133" font-size="11" fill="#999">streaming inference</text>
+<text x="430" y="108" font-size="15">NETLIFY FUNCTION</text><text x="430" y="133" font-size="11" fill="#999">request handler</text>
+<text x="785" y="108" font-size="15">GROQ</text><text x="785" y="133" font-size="11" fill="#999">model inference</text>
 <text x="445" y="252" font-size="15">LOCAL PERSISTENCE</text><text x="445" y="277" font-size="11" fill="#999">conversations / preferences</text>
 </g></svg>
