@@ -170,19 +170,6 @@ Recent activity is available on my [GitHub profile](https://github.com/leemaxyum
 
 ---
 
-## `~/time`
-
-WakaTime can turn this section into actual build telemetry once the workflow is enabled.
-
-```text
-language distribution
-editor / OS usage
-daily coding time
-weekly coding streak
-```
-
-See `SETUP.md` for the one-time secret setup.
-
 ---
 
 ## `~/build-log`
