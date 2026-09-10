@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=build+%E2%86%92+break+%E2%86%92+understand+%E2%86%92+ship;systems+over+labels;curiosity+is+the+roadmap;the+profile+is+part+of+the+project" alt="Typing animation">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=build+%E2%86%92+break+%E2%86%92+understand+%E2%86%92+ship;systems+over+labels;curiosity+is+the+roadmap;side+quests+welcome" alt="Typing animation">
 
 <br>
 
@@ -38,7 +38,7 @@ This profile is intentionally designed to grow with that process.
 │  MODE        BUILD                                                   │
 │  STATUS      ACTIVE                                                   │
 │  FOCUS       software / systems / experiments                        │
-│  OPEN SOURCE moving from user → contributor → maintainer              │
+│  VIBE        side quests welcome                                     │
 │  CURRENT     TPLAYTV · Phantom AI · Forest Quest                      │
 │                                                                       │
 └───────────────────────────────────────────────────────────────────────┘
@@ -98,31 +98,13 @@ Tools get added when a project gives me a reason to learn them.
 
 ---
 
-## `~/engineering`
-
-```text
-REAL-TIME                 APPLICATIONS              SYSTEMS
-──────────                ────────────              ───────
-Socket.IO                 React                     networking
-state synchronization     APIs                       architecture
-rooms / sessions          async flows                persistence
-latency                   UX                         deployment
-
-COMPUTATION               OPEN SOURCE               BUILDING
-───────────               ───────────                ────────
-C++                       Git / GitHub                prototypes
-Python                    issues / PRs                experiments
-DSA                       documentation               games
-math                      maintainership              weird ideas
-```
-
 ---
 
+## `~/signals`
 
+A compact readout of current projects and contribution activity.
 
-## `~/telemetry`
-
-### Repository signal
+### Project signal
 
 <div align="center">
 
@@ -134,6 +116,8 @@ math                      maintainership              weird ideas
 ### Contribution matrix
 
 <img src="./output/github-snake-dark.svg" width="100%" alt="Contribution matrix">
+
+[View full contribution activity →](https://github.com/leemaxyum)
 
 ---
 
@@ -154,8 +138,6 @@ This log is intentionally short.
 Projects should tell the story better than a list of adjectives.
 
 ---
-
-
 
 ## `~/connect`
 
