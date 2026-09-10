@@ -44,15 +44,12 @@ If you want the profile cleaner, remove that workflow and the README does not de
 
 The README uses:
 - readme-typing-svg
-- GitHub Readme Stats
-- GitHub Streak Stats
-- GitHub Profile Trophy
-- GitHub Activity Graph
 - Skill Icons
 - profile views
+- Shields.io badges
 - Capsule Render
 
-These are intentionally limited to visual/telemetry components that support the profile instead of turning it into a widget wall.
+These are intentionally limited to visual components that support the profile instead of turning it into a widget wall.
 
 ## 6. Personalize the build log
 
