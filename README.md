@@ -137,38 +137,18 @@ The objective is not to collect contribution squares.
 
 ## `~/telemetry`
 
-### GitHub
-
-<div align="center">
-
-GitHub activity and streak details are available on my [profile](https://github.com/leemaxyum).
-
-</div>
-
 ### Repository signal
 
 <div align="center">
 
-<a href="https://github.com/leemaxyum/TPLAYTV">TPLAYTV on GitHub</a>
-<a href="https://github.com/leemaxyum/phantom-ai">Phantom AI on GitHub</a>
+<a href="https://github.com/leemaxyum/TPLAYTV"><img src="https://img.shields.io/badge/TPLAYTV-000?style=for-the-badge&logo=github&logoColor=white" alt="TPLAYTV on GitHub"></a>
+<a href="https://github.com/leemaxyum/phantom-ai"><img src="https://img.shields.io/badge/PHANTOM_AI-000?style=for-the-badge&logo=github&logoColor=white" alt="Phantom AI on GitHub"></a>
 
 </div>
 
 ### Contribution matrix
 
 <img src="./output/github-snake-dark.svg" width="100%" alt="Contribution matrix">
-
-### Trophy wall
-
-Trophies are available on my [GitHub profile](https://github.com/leemaxyum).
-
----
-
-## `~/activity`
-
-Recent activity is available on my [GitHub profile](https://github.com/leemaxyum).
-
----
 
 ---
 
