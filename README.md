@@ -141,8 +141,7 @@ The objective is not to collect contribution squares.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=leemaxyum&show_icons=true&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=AAAAAA&icon_color=FFFFFF&rank_icon=github" width="49%" alt="GitHub stats">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=leemaxyum&hide_border=true&background=00000000&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF&sideLabels=AAAAAA&dates=777777" width="49%" alt="GitHub streak">
+GitHub activity and streak details are available on my [profile](https://github.com/leemaxyum).
 
 </div>
 
@@ -150,12 +149,8 @@ The objective is not to collect contribution squares.
 
 <div align="center">
 
-<a href="https://github.com/leemaxyum/TPLAYTV">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leemaxyum&repo=TPLAYTV&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=AAAAAA" width="49%" alt="TPLAYTV repository card">
-</a>
-<a href="https://github.com/leemaxyum/phantom-ai">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=leemaxyum&repo=phantom-ai&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=AAAAAA" width="49%" alt="Phantom AI repository card">
-</a>
+<a href="https://github.com/leemaxyum/TPLAYTV">TPLAYTV on GitHub</a>
+<a href="https://github.com/leemaxyum/phantom-ai">Phantom AI on GitHub</a>
 
 </div>
 
@@ -165,13 +160,13 @@ The objective is not to collect contribution squares.
 
 ### Trophy wall
 
-<img src="https://github-profile-trophy.vercel.app/?username=leemaxyum&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=7" width="100%" alt="GitHub trophies">
+Trophies are available on my [GitHub profile](https://github.com/leemaxyum).
 
 ---
 
 ## `~/activity`
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=leemaxyum&bg_color=00000000&color=AAAAAA&line=FFFFFF&point=FFFFFF&area=true&hide_border=true" width="100%" alt="GitHub activity graph">
+Recent activity is available on my [GitHub profile](https://github.com/leemaxyum).
 
 ---
 
