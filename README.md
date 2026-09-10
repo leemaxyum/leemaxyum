@@ -118,22 +118,7 @@ math                      maintainership              weird ideas
 
 ---
 
-## `~/open-source`
 
-```text
-LEVEL 01   learn the ecosystem
-LEVEL 02   read real code
-LEVEL 03   fix small things
-LEVEL 04   submit useful PRs
-LEVEL 05   own a subsystem
-LEVEL 06   maintain something people depend on
-```
-
-The objective is not to collect contribution squares.
-
-**The objective is to become useful to unfamiliar codebases.**
-
----
 
 ## `~/telemetry`
 
@@ -170,16 +155,7 @@ Projects should tell the story better than a list of adjectives.
 
 ---
 
-## `~/principles`
 
-- **Build before branding.**
-- **Understand the abstraction before hiding behind it.**
-- **Prefer working systems over impressive descriptions.**
-- **Read source code.**
-- **Ship small, then deepen the architecture.**
-- **Keep the profile honest enough that the work can defend it.**
-
----
 
 ## `~/connect`
 
