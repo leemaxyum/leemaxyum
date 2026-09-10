@@ -33,9 +33,9 @@ The first version is usually rough. The point is to keep iterating until it feel
 ```text
 ┌─ SIGNAL ───────────────────────────────────────────────────────────────┐
 │                                                                       │
-│  ARC         LARP = TPLAYTV                                          │
+│  LARP        TPLAYTV                                                │
 │  LOADOUT     TypeScript · C++ · Canvas                               │
-│  CURRENTLY   LARPING: TPLAYTV · Forest Quest                        │
+│  IN PROGRESS TPLAYTV · Forest Quest                                  │
 │  INACTIVE    Portfolio (auto-updates) · Phantom AI                  │
 │  NEXT        ◌ LOADING                                               │
 │                                                                       │
