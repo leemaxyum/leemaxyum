@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=learn+%E2%86%92+build+%E2%86%92+break+%E2%86%92+repeat;make+it+work+make+it+better;systems+interfaces+games;one+more+iteration" alt="Typing animation">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=LARP+%2F+LEARN+%2F+BUILD+%2F+BREAK+%2F+REPEAT;make+it+work+make+it+better;systems+interfaces+games;one+more+iteration" alt="Typing animation">
 
 <br>
 
