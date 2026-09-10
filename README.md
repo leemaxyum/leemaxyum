@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=build+%E2%86%92+break+%E2%86%92+understand+%E2%86%92+ship;systems+over+labels;curiosity+is+the+roadmap;side+quests+welcome" alt="Typing animation">
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=900&color=FFFFFF&center=true&vCenter=true&width=720&lines=learn+%E2%86%92+build+%E2%86%92+break+%E2%86%92+repeat;make+it+work+make+it+better;systems+interfaces+games;one+more+iteration" alt="Typing animation">
 
 <br>
 
@@ -18,15 +18,13 @@
 
 ## `~/about`
 
-I build things, then keep pulling on the thread until I understand **why they work**.
+I learn by making things, usually somewhere between software, games, interfaces, and visual experiments.
 
-No permanent niche. No stack loyalty. No pretending the roadmap is finished.
+I like projects that make me solve the underlying problem instead of hiding it behind a library. Most of what I do follows the same loop:
 
-The common thread is simple:
+> **learn → build → break → understand → repeat**
 
-> **make something real → learn what breaks → rebuild it better → ship the next version**
-
-This profile is intentionally designed to grow with that process.
+The first version is usually rough. The point is to keep iterating until it feels like mine.
 
 ---
 
@@ -35,11 +33,11 @@ This profile is intentionally designed to grow with that process.
 ```text
 ┌─ SIGNAL ───────────────────────────────────────────────────────────────┐
 │                                                                       │
-│  MODE        BUILD                                                   │
-│  STATUS      ACTIVE                                                   │
-│  FOCUS       software / systems / experiments                        │
-│  VIBE        side quests welcome                                     │
-│  CURRENT     TPLAYTV · Phantom AI · Forest Quest                      │
+│  ARC         LARP = TPLAYTV                                          │
+│  LOADOUT     TypeScript · C++ · Canvas                               │
+│  CURRENTLY   LARPING: TPLAYTV · Forest Quest                        │
+│  INACTIVE    Portfolio (auto-updates) · Phantom AI                  │
+│  NEXT        ◌ LOADING                                               │
 │                                                                       │
 └───────────────────────────────────────────────────────────────────────┘
 ```
