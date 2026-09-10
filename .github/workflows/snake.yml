@@ -1,6 +1,9 @@
 name: Contribution Matrix
 
 on:
+  push:
+    paths-ignore:
+      - "output/github-snake-dark.svg"
   schedule:
     - cron: "17 18 * * *"
   workflow_dispatch:
