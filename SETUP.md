@@ -19,12 +19,7 @@ Keep:
 
 ## 2. Contribution matrix
 
-The first version of `output/github-snake-dark.svg` is a placeholder so the README has no broken image.
-
-Push the workflow. GitHub Actions will replace it with your real contribution matrix.
-
-You can also run:
-GitHub → Actions → Contribution Matrix → Run workflow
+The `Contribution Matrix` workflow generates `output/github-snake-dark.svg` from your GitHub contributions. It runs automatically after pushes to this repository and can also be started manually from GitHub Actions.
 
 ## 3. WakaTime
 
