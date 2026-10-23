@@ -16,14 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Generate contribution snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
         with:
           github_user_name: leemaxyum
           outputs: |
             output/github-snake-dark.svg
 
       - name: Commit generated asset
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5
         with:
           message: "chore: update contribution matrix"
           add: "output/github-snake-dark.svg"
